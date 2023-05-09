@@ -6,6 +6,7 @@ const Details=(props)=> {
         <Text>Details Screen</Text>
         <Text> {props.route.params.name} </Text>
         <Button title="Go to Back" onPress={() => props.navigation.goBack()}/>
+        <Button  title="Go to Profile Screen" onPress={() => props.navigation.navigate('Profile')}/>
       </View>
     );
   }
