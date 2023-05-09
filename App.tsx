@@ -15,9 +15,7 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home">
-          {props => <Home {...props} id={40} />}
-        </Stack.Screen>
+        <Stack.Screen name="Home" component={Home} initialParams={{id : 20}} />
         <Stack.Screen name="Details" component={Details} />
       </Stack.Navigator>
     </NavigationContainer>
