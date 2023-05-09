@@ -4,7 +4,7 @@ const HomeScreen=(props)=> {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>{props.route.params.id}</Text>
-        <Button title="Go to Home Screen" onPress={() => props.navigation.push('Home', {id : 25})}/>
+        <Button title="Go to Details Screen" onPress={() => props.navigation.navigate('Details', {name : 'Ali kiani'})}/>
       </View>
     );
   }
